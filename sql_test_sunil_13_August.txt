@@ -1,0 +1,23 @@
+(1) select product_name, avg(quantity_sold) from table_name group by  product_name   (Number-> 10)
+
+(2) select region, count(distinct(product_name)) from table_name group by region;  (Number-> 10)
+
+
+(3) select product_name, region, count(sale_id) from table_name group by product_name, region ; (Number-> 10)
+
+(4) select region ,count(product_name)  from table_name group by region having count(product_name) > 2 ; ( Number -> 10)
+
+
+(5) select region,product_name , sum(quantity_sold), avg(price_per_unit) from 
+   table_name where product_name="Moblie" group by region  (Number -> 10)
+
+
+(6) select sum(quantity_sold*price_per_unit), as total_sales_revenue,year(sale_date) from table_name group by year(sale_date); (Number -> 10)
+
+(7) select year(sale_date) as per_year , month(sale_date) as per_month from table_name group by
+year(sale_date),month(sale_date) ; (Number -> 0)
+
+
+-- five interview questions  from any where , and write any 
+
+-- joins , what are keys , what are relation ship in sql , primary key and foregion key 
